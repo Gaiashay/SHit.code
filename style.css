@@ -1,0 +1,51 @@
+div.form-item {
+  margin-left: 100px;
+}
+
+#submit-button {
+    margin-left: 100px;
+}
+/* h2.title {
+    margin-left: 100px;
+} */
+
+
+h2.title {
+	color: green;
+    /* most specific */
+}
+
+
+h2 {
+	color:rgb(255, 0, 0);
+    text-shadow: black 0px 0px 2px;
+}
+
+.title {
+	color: blue;
+}
+
+h2#special-title {
+    color: blue;
+}
+
+#animorph-result {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-70%);
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#animorph-img {
+    max-width: 250px;
+}
+#animorph-text {
+    color: chartreuse;
+    text-shadow: black 0px 0px 2px;
+}
+.hidden {
+    visibility: hidden;
+}

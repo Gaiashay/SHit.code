@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <body style="background-color:rgb(255, 238, 0);">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatAnimorphRU</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div {
+            /* background-color: red */
+        }
+
+        h2,
+        h3 {
+            text-align: center;
+        }
+
+
+        .form-item {
+            margin: 50px 0;
+        }
+
+        label, select {
+            display: block;
+            /* margin: 10px 0; */
+        }
+        
+        option {
+            text-align: center;
+            width: 250px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Notes for Design -->
+    <header>
+        <h2 id="special-title" class="title">What Animorph R YOO?</h2>
+    </header>
+    <div>
+        <h2> ANSWER HERE FOR YOUR ANIMORPH</h2>
+        <h3>Bless 🙏</h3>
+    </div>
+    <!-- list of form values I need: -->
+    <!-- FavouriteColour -->
+        <!-- badboyblue -->
+        <!-- Maroon -->
+    <!-- C4T0RD0G -->
+        <!-- Cat -->
+        <!-- Dog -->
+    <!-- Summororwinter -->
+        <!-- Summer -->
+        <!-- Winter -->
+    <!-- TopOrBottom -->
+        <!-- Bottom -->
+        <!-- Top -->
+
+    <!--  Function will tally results from form, then display an image of an animorph  -->
+    <!-- 6 Autismorphs  -->
+    <!-- 8 different answers -->
+    <main>
+        <form method="post" id="quiz-form">
+            <div class="form-item">
+                <label for="FavouriteColour">What colour do you prefer?</label>
+                <select name="FavouriteColour" id="FavouriteColour">
+                    <option value="badboyblue">Bad Boy Blue</option>
+                    <option value="Maroon">Maroon</option>
+                    <!-- <label for="Heck">Heck</label> -->
+        
+                </select>
+            </div>
+            <div class="form-item">
+                <label for="C4T0RD0G">C4T 0R D0G?</label>
+                <select name="C4T0RD0G" id="C4T0RD0G">
+                    <option value="Cat">C4T</option>
+                    <option value="Dog">D0G</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <label for="Summerorwinter">Summer or Winter?</label>
+                <select name="Summerorwinter" id="Summerorwinter">
+                    <option value="Summer">Summer</option>
+                    <option value="Winter">Winter</option>
+                </select>
+        
+            </div>
+            <div class="form-item">
+                <label for="TopOrBottom">Top Or Bottom?</label>
+                <select name="TopOrBottom" id="Top0rBottom">
+                    <option value="Bottom">Bottom</option>
+                    <option value="Top">Top</option>
+                </select>
+            </div>
+            <button id="submit-button" type="submit">Submit</button>
+            </form>
+        </form>
+        <div class = "hidden" id="animorph-result">
+            <img id="animorph-img"src="./images/AxAnimorph.jpg" alt="">
+            <h2 id="animorph-text"></h2>
+        </div>
+    </main>
+    <audio id="audio" src="./anime-wow-sound-effect.mp3"></audio>
+    <!-- Colourful -->
+    <script type="module" src="./script.js"></script>    
+</body>
+</html>
